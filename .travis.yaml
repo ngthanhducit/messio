@@ -4,6 +4,8 @@ addons:
   apt:
     packages:
       - lib32stdc++6
+before_install:
+  - gem install rake
 install:
   - git clone https://github.com/flutter/flutter.git -b stable --depth 1
   - export PATH=./flutter/bin:$PATH
